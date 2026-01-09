@@ -20,6 +20,8 @@ login_key = "YOUR_API_KEY_HERE"  # ← Paste your key here
 ### 2. Repository Structure
 
 ```python
+unzip qcis_and_execution_data.zip
+
 ├── NMLO-ML/                   # Core source code for data collection and layout optimization
 ├── qcis_and_execution_data/   # Raw experimental data (March 2025 – April 2025)
 └── model/                     # Trained machine learning models
@@ -36,4 +38,5 @@ pip install -r requirements.txt
 ```python
 python main.py -generate # Collect real-device execution data for training.
 python main.py -test # Evaluate model performance on test data.
+
 ```
